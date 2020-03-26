@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
         number = number / 10;
     }
 
-    std::cout << ((11 - (sum % 11) == 10) ? "X" : std::to_string(11 - (sum % 11)));
+    std::cout << ((11 - (sum % 11) == 10) ? "X" : std::to_string((sum % 11 == 0) ? 0:11 - (sum % 11)));
 
     return 0;
 
